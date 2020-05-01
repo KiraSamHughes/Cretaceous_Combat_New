@@ -10209,12 +10209,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1152214788 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8429476990776454213, guid: 13c1c815eea6e4694a5576d907af2556,
-    type: 3}
-  m_PrefabInstance: {fileID: 8429476991061233195}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1159446995
 GameObject:
   m_ObjectHideFlags: 0
@@ -11449,6 +11443,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1641341509 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1489556297598286141, guid: 13c1c815eea6e4694a5576d907af2556,
+    type: 3}
+  m_PrefabInstance: {fileID: 8429476991061233195}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1645795246
 GameObject:
   m_ObjectHideFlags: 0
@@ -13746,7 +13746,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gameOverMusic
       value: 
-      objectReference: {fileID: 1152214788}
+      objectReference: {fileID: 1641341509}
     - target: {fileID: 8429476990773302381, guid: 13c1c815eea6e4694a5576d907af2556,
         type: 3}
       propertyPath: m_Sprite
@@ -13842,6 +13842,11 @@ PrefabInstance:
       propertyPath: theLevelManager
       value: 
       objectReference: {fileID: 332685146}
+    - target: {fileID: 8493207834523098089, guid: 13c1c815eea6e4694a5576d907af2556,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c616cedc3ae76641a0bd3b879a76dc9, type: 3}
     - target: {fileID: 8493257217674234323, guid: 13c1c815eea6e4694a5576d907af2556,
         type: 3}
       propertyPath: m_audioClip
