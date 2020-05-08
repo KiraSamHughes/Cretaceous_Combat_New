@@ -4,8 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ProgressManager : MonoBehaviour
+
 {
     public int currentLevel;
+    public int isSkinRedSold;
+    public int isSkinBlueSold;
+    public int isSkinShadowSold;
+    public int coinCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,5 +43,17 @@ public class ProgressManager : MonoBehaviour
             SceneManager.LoadScene("LoadingScene4"); 
         }
      }
-       
+    public void ResetShop()
+    {
+        PlayerPrefs.SetInt("isSkinRedSold", 0);
+        PlayerPrefs.SetInt("isSkinBlueSold", 0);
+        PlayerPrefs.SetInt("isSkinShadowSold", 0);
+    }
+
+    public void ResetCoins()
+    {
+        PlayerPrefs.SetInt("coinCount", 0);
+        coinCount = PlayerPrefs.GetInt("coinCount");
+
+    }
 }

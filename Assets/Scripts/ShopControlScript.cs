@@ -19,7 +19,7 @@ public class ShopControlScript : MonoBehaviour
     public int isSkinBlueSold;
     public int isSkinShadowSold;
 
-   // public Text coinText;
+    public Text coinText;
     public Text skinPrice1;
     public Text skinPrice2;
     public Text skinPrice3;
@@ -38,33 +38,60 @@ public class ShopControlScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //coinText.text = "Fossils: " + coinCount;
+        coinText.text = "Fossils: " + coinCount;
 
         isSkinRedSold = PlayerPrefs.GetInt("isSkinRedSold");
         isSkinBlueSold = PlayerPrefs.GetInt("isSkinBlueSold");
         isSkinShadowSold = PlayerPrefs.GetInt("isSkinShadowSold");
 
         if (coinCount >= 20 && isSkinRedSold == 0)
+        {
             buyRedButton.interactable = true;
+        }
         else
+        {
             buyRedButton.interactable = false;
+        }
 
         if (coinCount >= 20 && isSkinBlueSold == 0)
+        {
             buyBlueButton.interactable = true;
+        }
         else
+        {
             buyBlueButton.interactable = false;
+        }
 
         if (coinCount >= 50 && isSkinShadowSold == 0)
+        {
             buyShadowButton.interactable = true;
+        }
         else
+        {
             buyShadowButton.interactable = false;
+        }
+
+        if (isSkinRedSold == 1)
+        {
+            skinPrice1.text = "Sold!";
+        }
+
+        if (isSkinBlueSold == 1)
+        {
+            skinPrice2.text = "Sold!";
+        }
+
+        if (isSkinShadowSold == 1)
+        {
+            skinPrice3.text = "Sold!";
+        }
     }
 
     public void BuyRedSkin()
     {
         coinCount -= 20;
         PlayerPrefs.SetInt("isSkinRedSold", 1);
-        skinPrice1.text = "Sold!";
+        //skinPrice1.text = "Sold!";
         //  buyRedButton.gameObject.SetActive(false);
     }
 
@@ -72,7 +99,7 @@ public class ShopControlScript : MonoBehaviour
     {
         coinCount -= 20;
         PlayerPrefs.SetInt("isSkinBlueSold", 1);
-        skinPrice2.text = "Sold!";
+       // skinPrice2.text = "Sold!";
        // buyBlueButton.gameObject.SetActive(false);
     }
 
@@ -80,15 +107,9 @@ public class ShopControlScript : MonoBehaviour
     {
         coinCount -= 50;
         PlayerPrefs.SetInt("isSkinShadowSold", 1);
-        skinPrice3.text = "Sold!";
+     //   skinPrice3.text = "Sold!";
       //  buyShadowButton.gameObject.SetActive(false);
     }
 
-    public void ResetShop()
-    {
-        PlayerPrefs.SetInt("isSkinRedSold", 0);
-        PlayerPrefs.SetInt("isSkinBlueSold", 0);
-        PlayerPrefs.SetInt("isSkinShadowSold", 0);
-    }
 }
 

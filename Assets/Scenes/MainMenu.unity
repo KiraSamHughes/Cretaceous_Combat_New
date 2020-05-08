@@ -213,7 +213,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1127331406}
+      - m_Target: {fileID: 1645694879}
         m_MethodName: ResetCoins
         m_Mode: 1
         m_Arguments:
@@ -224,7 +224,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2076498326}
+      - m_Target: {fileID: 1645694879}
         m_MethodName: ResetShop
         m_Mode: 1
         m_Arguments:
@@ -5584,70 +5584,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886111257}
   m_CullTransparentMesh: 0
---- !u!1 &1127331405
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1127331407}
-  - component: {fileID: 1127331406}
-  m_Layer: 0
-  m_Name: LevelManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1127331406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127331405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86b234f550a0a4036a709697fb0a558f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitToRespawn: 0
-  thePlayer: {fileID: 0}
-  sr: {fileID: 0}
-  rb2D: {fileID: 0}
-  coinCount: 0
-  DieBurst: {fileID: 0}
-  coinText: {fileID: 0}
-  heart1: {fileID: 0}
-  heart2: {fileID: 0}
-  heart3: {fileID: 0}
-  heartFull: {fileID: 0}
-  heartHalf: {fileID: 0}
-  heartEmpty: {fileID: 0}
-  maxHealth: 0
-  healthCount: 0
-  respawning: 0
-  objectsToReset: []
-  invincible: 0
-  coinSound: {fileID: 0}
-  levelMusic: {fileID: 0}
-  gameOverMusic: {fileID: 0}
---- !u!4 &1127331407
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1127331405}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1065.5377, y: 450.6599, z: -56452.67}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1145095190
 GameObject:
   m_ObjectHideFlags: 0
@@ -6126,6 +6062,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevel: 0
+  isSkinRedSold: 0
+  isSkinBlueSold: 0
+  isSkinShadowSold: 0
+  coinCount: 0
 --- !u!4 &1645694880
 Transform:
   m_ObjectHideFlags: 0
@@ -6138,7 +6078,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1658128729
 GameObject:
@@ -6265,7 +6205,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1698821061
 GameObject:
@@ -6472,59 +6412,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 20.47998, y: 20.47998}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &2076498325
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2076498327}
-  - component: {fileID: 2076498326}
-  m_Layer: 0
-  m_Name: ShopControls
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2076498326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2076498325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07d626bb1d2931d4c8e26323431e97ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinCount: 0
-  isSkinRedSold: 0
-  isSkinBlueSold: 0
-  isSkinShadowSold: 0
-  skinPrice1: {fileID: 0}
-  skinPrice2: {fileID: 0}
-  skinPrice3: {fileID: 0}
-  buyRedButton: {fileID: 0}
-  buyBlueButton: {fileID: 0}
-  buyShadowButton: {fileID: 0}
---- !u!4 &2076498327
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2076498325}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1229.394, y: 394, z: -1882.0065}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2102812980
 GameObject:
   m_ObjectHideFlags: 0
