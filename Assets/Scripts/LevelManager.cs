@@ -146,7 +146,7 @@ public class LevelManager : MonoBehaviour {
 		healthCount = maxHealth;
 		respawning = false;
 		UpdateHeartMeter ();
-		coinCount = 0;
+		//coinCount = 0;
 		coinText.text = "Fossils: " + coinCount;
 		thePlayer.transform.position = thePlayer.respawnPosition;
        // thePlayer2.transform.position = p2respawn.transform.position;
@@ -263,14 +263,12 @@ public class LevelManager : MonoBehaviour {
 		//livesText.text = "Lives x" + currentLives;
 		//coinSound.Play ();
 	}
-
-    public void ResetCoins()
-    {
+	public void ResetCoins()
+	{
 		PlayerPrefs.SetInt("coinCount", 0);
 		coinCount = PlayerPrefs.GetInt("coinCount");
 		coinText.text = "Fossils: " + coinCount;
 
-    }
-
+	}
 
 }
