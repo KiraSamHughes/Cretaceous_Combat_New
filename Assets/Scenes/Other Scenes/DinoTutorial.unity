@@ -14143,6 +14143,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1489556297598286141, guid: 13c1c815eea6e4694a5576d907af2556,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4320983370249113756, guid: 13c1c815eea6e4694a5576d907af2556,
         type: 3}
       propertyPath: m_AnchorMin.x
@@ -14308,11 +14313,21 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 9825bba58a88e5749867ecd18a0f68cd, type: 3}
+    - target: {fileID: 8429476990776306717, guid: 13c1c815eea6e4694a5576d907af2556,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8429476990776454213, guid: 13c1c815eea6e4694a5576d907af2556,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 95c19c1c7df37cc41af9298ffcad86ef, type: 3}
+    - target: {fileID: 8429476990776454213, guid: 13c1c815eea6e4694a5576d907af2556,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8429476990782852277, guid: 13c1c815eea6e4694a5576d907af2556,
         type: 3}
       propertyPath: m_IsActive
@@ -14398,11 +14413,21 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 5c616cedc3ae76641a0bd3b879a76dc9, type: 3}
+    - target: {fileID: 8493207834523098089, guid: 13c1c815eea6e4694a5576d907af2556,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8493257217674234323, guid: 13c1c815eea6e4694a5576d907af2556,
         type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: d116da6da225af740979892f1774c927, type: 3}
+    - target: {fileID: 8493257217674234323, guid: 13c1c815eea6e4694a5576d907af2556,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13c1c815eea6e4694a5576d907af2556, type: 3}
 --- !u!212 &8429476991061233196 stripped
